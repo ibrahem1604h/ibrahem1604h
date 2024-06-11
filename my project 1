@@ -1,0 +1,18 @@
+#لستة الالوان (فارغة في البداية)
+colors=[]
+#ادخال اللون الأول
+color1 = input("Add the first color you like: ")
+colors.append(color1)
+#هل تريد ادخال لون ثاني؟
+yes_no=input("Do you want to add more colors? Yes, or No?\t").lower()
+if yes_no=="yes":
+ #في حالة ادخال لون ثاني، ادخال الون
+  another_color=input("Add another color to the list: ")
+  colors.append(another_color)
+  #اطبع اللستة(فيها اللونين))
+  print("The colors you like are:")
+  print(colors)
+else:
+  #اطبع اللستة(فيها لون واحد)
+  print("The colors you like are:")
+  print(colors)
